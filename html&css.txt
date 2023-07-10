@@ -1,3 +1,0 @@
-<title> ... </title> # title that show on tab that write this code outside of head and body
-<h1> ... <h1> # header
-<p> ... <p> # paragraph

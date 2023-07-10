@@ -1,0 +1,12 @@
+# HTML
+
+example: paragraph element -> <p>(opening tag) content(also images have no content) </p>(closing tag)
+
+## Start
+
+1. <!DOCTYPE html> # declare doc type to tell the browser that this doc use hTML.
+2. <html></html> # html element
+3. <head> </head> # head element inside html element (include title, additional info about page, link to css files, ...)
+* <title></title> # is name of tab. subset of head (inside of head) 
+4. <body></body> #  body element next and out of head but inside of html element
+
