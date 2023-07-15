@@ -1,12 +1,59 @@
-# HTML
+ # HTML
 
 example: paragraph element -> <p>(opening tag) content(also images have no content) </p>(closing tag)
+
+## extensions: 
+- image prewiew
+- auto rename tag
+- live server
+- color highlight
+
+##HTML Entities
+
+## settings
+- auto close tag
 
 ## Start
 
 1. <!DOCTYPE html> # declare doc type to tell the browser that this doc use hTML.
 2. <html></html> # html element
 3. <head> </head> # head element inside html element (include title, additional info about page, link to css files, ...)
-* <title></title> # is name of tab. subset of head (inside of head) 
+* <title></title> # subset of head (inside of head)
 4. <body></body> #  body element next and out of head but inside of html element
+5. <h1></h1> # head of text that has h1 to h6 and go to smaller size of font (every page should be have h1)
+6. <p></p> # paragraph
+7. <!-- --> # comment
+8. 
+  - <strong></strong> # bold a part of text
+  - <b></b> # bold a part of text
+  - <i></i> # italic a part of text
+  - <em></em> # italic a part of text
+9. 
+  - <ol></ol> # order list
+  - <li></li> # for each item of list and it must be in ol
+10.
+  - <ul></ul> # unorder list
+  - <li></li> # for each item of list and it must be in ul
+  
+### attributes
+11. 
+  - <img src="directory of image" alt="description of image" height="" weight="" />
+  - <html lang="en"></html> # html element and set language
+  - <meta charset="UTF-8" # set character
+  
+12. href is attribute that create link
+  - <a href="url">title of link</a> # open website that is outside of our website in this tab 
+  - <a href="url" target="_blank">title of link</a> # open website that is outside of our website in new tab
+  - <a href="name of html that you create for example: blog.html">title of link</a> # open page that is inside of our website in this tab 
+  - <a href="#">title of link</a> # open nothing and just go to above the webpage
+
+13.
+  - <nav></nav> # group navigation links in a container
+  - <header></header> # group header text like h1 or somthing like this that we want separate them from other contents
+  - <article></article> # group other content except header
+    - <header></header> # group header content of article
+
+14. <aside></aside> # group that is the closure of main content
+15. <footer></footer> # craete a footer
+16. <div></div> # for group contents when we use this element the group has no semantic meaning for us and just we want group them
 
