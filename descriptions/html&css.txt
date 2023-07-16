@@ -57,3 +57,88 @@ example: paragraph element -> <p>(opening tag) content(also images have no conte
 15. <footer></footer> # craete a footer
 16. <div></div> # for group contents when we use this element the group has no semantic meaning for us and just we want group them
 
+# CSS
+
+## Inline 
+<h1 style="color : blue"></h1> declare style in html's elements
+
+## Internal
+<style> h1 {color: blue}></style> # declare style element in head.
+
+## External 
+h1 {color: blue} # create css file write code like this.
+<link href="directory of css file" rel="description" /> # link html file to css file
+
+## Selector Examples
+ 
+example1:
+h1 {
+  color: #1098ad; # font color
+  font-size: 26px; # font size
+  font-family: sans-serif; # kind of font
+  text-transform: uppercase; # characters form
+  font-style: italic; # style
+  text-align: center; # alignment
+  background-color: #f7f7f7; #background color
+}
+
+example2:
+h1,h2,h3,h4,p,li {font-family: sans-serif; } # we can list selector to attribute the same features to them
+
+#id {font-family: sans-serif;} # specify selector by id (id is unic) we dont use id mainly.
+.class {font-family: sans-serif;} # specify selector by class
+/* */ # comment
+
+example3:
+.related-list {list-style: none;} # points remove
+
+## colors
+rgb : #ff ff ff (hexadecimal)
+
+example4:
+.related-aside {
+  background-color: #f7f7f7; # background color
+  border-top: 5px solid #1098ad; # border top size, form, color
+  border-bottom: 5px solid #1098ad; # border bottom  size, form, color
+}
+
+example5:
+li:first-child {
+  font-weight: bold; # convert all first item of every li elements to bold.
+}
+
+example6:
+li:nth-child(2) {
+  color: #1098ad; # colored second item of every li elements.
+}
+
+example7:
+article p:last-child {
+  color: #1098ad;       #colored the last child of article if it was p, but if p was not the last on this code is incurrect.
+}
+
+## Link Styles
+a:link {
+  color: #1098ad;        # link style
+  text-decoration: none; # underline of links
+}
+
+a:visited {
+  color: #1098ad;  # link that visited style
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;			# when you move mouse on link style
+  text-decoration: underline  orangered;
+}
+
+a:active {
+  background-color: black;	# when you click on link style
+  font-style: italic;
+}
+
+## chrome dev tools
+right click >> inspect >> elements 
+
+- on right side you can see style of each part you click on it
