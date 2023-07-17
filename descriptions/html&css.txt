@@ -142,3 +142,75 @@ a:active {
 right click >> inspect >> elements 
 
 - on right side you can see style of each part you click on it
+
+* {
+  color:red;  # all of elements get red color
+}
+	
+
+## Resolve conflicting delaration
+priority (high to low): #id -> .class -> element selector(p, li, div, ...) -> universal selector(*) and in same priority the last one is higher priority yhan other
+priority (high to low): psudo class -> element selector
+
+## Inheritance 
+some properties (like text)  get inherited from parents to child but can easily overwrite same properties that there is in child.
+
+## The CSS box model
+1.content # text, image, table, ...
+2.border # line around box
+3.padding # space inside
+4.margin # space outside
+
+- if you margin-bottem for top element, and margin top for bottem element, the bigger one applied.
+example1:
+.main-header {
+  padding-left: 40px;
+  padding: 20px 40px; # bottem-top  left-right
+  margin-bottom: 60px;
+  width: 500px; # width of element box
+}
+
+example2:
+.post-img {
+  width: 100%; # 100% of container(parent) of the current element width
+  height: auto;
+}
+
+example3:
+.container {	# all of elements are in container
+  width: 700px; # the children not be wider than parent.
+  margin-left: auto; # means margin of left equals right and depends on page size (as a result container been in center)
+  margin-right: auto;
+}
+
+## defferent boxes or elements
+1. inline boxes # spacing content's size (strong, a, ...) -> margin and padding applies in horizontally not top or bottom
+nav a:link {
+  display: block; # convert to block level
+}
+
+2. block-level boxes # spacing all of parent's element width
+nav a:link {
+  display: inline; # convert to inline
+}
+
+3.inline-block box 
+- looks like inline (spacing content's size), behave like block level (margin and padding applies all of side)
+nav a:link {
+  display: inline-block; # convert to inline-block
+}
+
+## Positioning
+1.normal flow
+2.absolute positioning # fixed
+
+example1:
+position: relative; # in this example is parent
+button {
+  position: absolute;
+  bottom: 50px;		# child # this absolutely fixed (with 50px from right and 50px from bottom of parent that set to relative.
+  right: 50px;
+}
+
+
+
