@@ -275,3 +275,19 @@ example1:
 ### Box sizing
 box-sizing: border-box;  # change size of things that are in border to fix the best size of the single elements, so it's better at first we add this code in to a * selector. 
 
+## FlexBox      # add image of properties to github
+
+- it is a flex container with some flex child (flex items) that they were placed side by side
+- has cross axis andmain axis
+
+some of properties:
+*notice: their properties are apply to all of items and this code write in element that all of items are subset of it.
+  display: flex;
+  align-self: stretch # strech to the highest item
+  order: number # default all of items order is 0 and we can change this order
+  flex-basis: 200px; # all of items that are smaller than 200px get to 200 and other ones that their content bigger than 200, their width fixed to their content width.
+  flex-shrink: 0; # 0, 1, 2, ...  (numbers is like order and when increase that item sise also increase)-> active or deactive # if be 1 the items generally can not bigger than container even flex basis is muuch and limit  size of items and default is 1
+  flex-grow: 1; # 0, 1, 2, ... (numbers is like order and when increase that item sise also increase)-> if its 1 the items extend to fill remaining space of container
+  flex: 0 0 200px # flex-grow flex-shrink flex-basis
+
+
