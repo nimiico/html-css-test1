@@ -244,4 +244,34 @@ h2::after {			#create element after h2
   right: -25px;
 }
 
+# CSS LAYOUTS
+
+- layout is a way that include text, image, ... that arranged on webpage
+- page layout is include components layouts that are in webpage
+- component layouts is part of a page loyout that include some contents
+
+## Float Layouts
+
+example1:
+.auther-image {
+  float: left ;			# float-left is connecting to leftmost side since get to an element and likes taht remove from normal flow
+  margin-bottom: 20px;
+}				
+.auther {
+  margin-left: 20px;
+  margin-top: 10px;
+  float: left;			# float-left is connecting to leftmost side since get to an element (auther-image) 
+}
+
+### fix colapse (clearfix hack) to resolve the colapsing in float layouts. 
+-first you craete another class in html for your element(clearfix in example) then you create psudo element(after) give it content and convert it to block to fix colapse.
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+
+### Box sizing
+box-sizing: border-box;  # change size of things that are in border to fix the best size of the single elements, so it's better at first we add this code in to a * selector. 
 
