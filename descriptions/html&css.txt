@@ -1,4 +1,6 @@
  # HTML
+ 
+ html validator # for check your error
 
 example: paragraph element -> <p>(opening tag) content(also images have no content) </p>(closing tag)
 
@@ -57,7 +59,7 @@ example: paragraph element -> <p>(opening tag) content(also images have no conte
 15. <footer></footer> # craete a footer
 16. <div></div> # for group contents when we use this element the group has no semantic meaning for us and just we want group them
 
-# CSS
+# FUNDAMENTAL CSS
 
 ## Inline 
 <h1 style="color : blue"></h1> declare style in html's elements
@@ -183,7 +185,7 @@ example3:
   margin-right: auto;
 }
 
-## defferent boxes or elements
+## different boxes or elements
 1. inline boxes # spacing content's size (strong, a, ...) -> margin and padding applies in horizontally not top or bottom
 nav a:link {
   display: block; # convert to block level
@@ -212,5 +214,34 @@ button {
   right: 50px;
 }
 
+## Psudo elements
+
+example1:
+h1::first-letter {
+  font-style: normal;
+}
+
+example2:
+h3 + p::first-line {  #the p elements that are exactly next of h3s first line (adjancy elements)
+  color: red;
+}
+
+### Create psudo element in css # no exist this element in html
+example:
+h2 {
+  position: relative; # for position the child, parent must be relative
+}
+
+h2::after {			#create element after h2
+  content: "Top";
+  color: #444;
+  background-color: #ffe70e;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
 
 
