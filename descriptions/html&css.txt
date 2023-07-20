@@ -1,6 +1,4 @@
  # HTML
- 
- html validator # for check your error
 
 example: paragraph element -> <p>(opening tag) content(also images have no content) </p>(closing tag)
 
@@ -59,7 +57,7 @@ example: paragraph element -> <p>(opening tag) content(also images have no conte
 15. <footer></footer> # craete a footer
 16. <div></div> # for group contents when we use this element the group has no semantic meaning for us and just we want group them
 
-# FUNDAMENTAL CSS
+# CSS
 
 ## Inline 
 <h1 style="color : blue"></h1> declare style in html's elements
@@ -256,7 +254,7 @@ example1:
 .auther-image {
   float: left ;			# float-left is connecting to leftmost side since get to an element and likes taht remove from normal flow
   margin-bottom: 20px;
-}				
+}
 .auther {
   margin-left: 20px;
   margin-top: 10px;
@@ -289,5 +287,40 @@ some of properties:
   flex-shrink: 0; # 0, 1, 2, ...  (numbers is like order and when increase that item sise also increase)-> active or deactive # if be 1 the items generally can not bigger than container even flex basis is muuch and limit  size of items and default is 1
   flex-grow: 1; # 0, 1, 2, ... (numbers is like order and when increase that item sise also increase)-> if its 1 the items extend to fill remaining space of container
   flex: 0 0 200px # flex-grow flex-shrink flex-basis
+  
+  ## CSS Grid
+- we have a grid container that includes grid items
+- divide in column and row child element
+- grid css has gridlines that they divide container to different parts, these parts called grid cells that grid items get into these cells also zthese cells might be not fill by items and be empty
+	if we have for example 2 rows, grid line is 3 and so on...
 
+### Auto grid cells sizing
+display: grid;
+grid-template-columns: 250px 150px; # generate 2 columns with 250px and 150 px width
+grid-template-columns: 1fr 1fr; # when you set the column width 1fr fill the container and it is flexible so if you set 1fr to 2 column boyh of them have same size and flexible (2fr is 2 times bigger than 1fr)
+grid-template-columns: 1fr 1fr == grid-template-columns: repeat(2, 1fr);
+grid-template-columns: auto; # take space that it needs
+column-gap: 30px; # column gap
+
+also row has above instruction
+grid-template-rows: 300px 200px; # for rows 
+row-gap: 60px; # row gap
+
+### Manualy grid cells sizing
+
+indexing guidlines: 1, 2, 3, 4 or -4, -3, -2, -1
+grid-column: 1 / 3; # from 1 to 3 column guideline
+grid-column: 1 / span 3; # start from 1 and span across three cells
+grid-row: 2 / 3; # from 2 to 3 row guideline
+
+### aligning tracks inside the containers
+justify-content: center; # aligning horizontally
+align-content: center; # aligning vertically
+
+aligning items inside the cells:
+align-items: center; # aligning vertically
+justify-items: center; # aligning horizontally
+
+align-self: center; # aligning vertically for one item
+justify-self: center; # aligning horizontally for one item
 
